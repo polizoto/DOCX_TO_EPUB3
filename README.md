@@ -33,27 +33,9 @@ Note: make the script executable by opening a terminal and entering the followin
 	- Use --- at the beginning of the file
 	- Use ... at the end of the file
 - For example, the YAML block can contain:
-`---`
 `title:`
-`- type: main`
-`  text: Math Test Book`
-- type: subtitle
-  text: A Possible Workflow for Creating EPUB 3 Books
-creator:
-- role: author
-  text: John Smith
-- role: editor
-  text: Mr. Editor
-identifier:
-- scheme: DOI
-  text: doi:10.234234.234/33
-publisher:  The EPUB Factory
-source: urn:isbn:12345678
-rights: © 2018 TEF, CC BY-NC
-language: en-US
-ibooks:
- version: 1.3.4
-...`
+`creator:`
+`publisher:` etc.
 
 - Place the Title.txt file in the root folder
 - Note: if you are using a different name or format for your metadata document, make sure to adjust the script (see below) so that the pandoc command contains the correct name and file extension (the default name for your metadata file in the script is "Title.txt")
