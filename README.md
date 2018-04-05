@@ -93,25 +93,14 @@ Note: make the script executable by opening a terminal and entering the followin
 
 6. (OPTIONAL) Use Sigil to correct / edit EPUB information for accessibility 
 
-	- Note: our script adds this information automatically but there is need for human editing to confirm the access mode, accessibility summary, add accessibility features, accessibility hazards etc.
-	- Here is a list of items that you may wish to edit/ add:
-			<meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.0 Level AA.</meta>
-			<meta property="schema:accessMode">textual</meta>
-			<meta property="schema:accessMode">visual</meta>
-			<meta property="schema:accessModeSufficient">textual,visual</meta>
-			<meta property="schema:accessModeSufficient">textual</meta>
-			<meta property="schema:accessibilityFeature">structuralNavigation</meta>
-			<meta property="schema:accessibilityFeature">MathML</meta>
-			<meta property="schema:accessibilityFeature">alternativeText</meta>
-			<meta property="schema:accessibilityFeature">longDescriptions</meta>
-			<meta property="schema:accessibilityAPI">ARIA</meta>
-			<meta property="schema:accessibilityControl">fullKeyboardControl</meta>
-			<meta property="schema:accessibilityControl">fullMouseControl</meta>
-			<meta property="schema:accessibilityControl">fullTouchControl</meta>
-			<meta property="schema:accessibilityHazard">noFlashing</meta>
-			<meta property="schema:accessibilityHazard">noSound</meta>
-			<meta property="schema:accessibilityHazard">noMotionSimulation</meta>
-	- Save the Ebook and exit Sigil
+- Note: our script adds this information automatically but there is need for human editing to confirm the access mode, accessibility summary, add accessibility features, accessibility hazards etc.
+- Here are some example items that you may wish to edit/ add:
+`<meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.0 Level AA.</meta>`
+`<meta property="schema:accessMode">textual</meta>`
+`<meta property="schema:accessMode">visual</meta>`
+`<meta property="schema:accessModeSufficient">textual,visual</meta>`
+`<meta property="schema:accessibilityFeature">MathML</meta>`
+- Save the Ebook and exit Sigil
 
 7. (Optional) Use the ACE accessibility checker again to confirm that there are no errors:
 
