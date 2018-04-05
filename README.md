@@ -33,10 +33,10 @@ Note: make the script executable by opening a terminal and entering the followin
 	- Use --- at the beginning of the file
 	- Use ... at the end of the file
 - For example, the YAML block can contain:
-`---
-title:
-- type: main
-  text: Math Test Book
+`---`
+`title:`
+`- type: main`
+`  text: Math Test Book`
 - type: subtitle
   text: A Possible Workflow for Creating EPUB 3 Books
 creator:
