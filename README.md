@@ -16,46 +16,47 @@ Note: make the script executable by opening a terminal and entering the followin
 
 1. Create a folder directory
 
-	- Root Folder/
-		- Title.txt
-		- cover.png
-		- cover.txt
-		- 01_chapter/
-			- 01_chapter.docx
-		- 02_chapter/
-			- 02_chapter.docx
-		- 03_chapter/
-			- 03_chapter.docx etc.
+- Root Folder/
+	- Title.txt
+	- cover.png
+	- cover.txt
+	- 01_chapter/
+		- 01_chapter.docx
+	- 02_chapter/
+		- 02_chapter.docx
+	- 03_chapter/
+		- 03_chapter.docx etc.
 
 2. Create a metadata file for your EPUB (e.g., Title.txt)
 
-	- use YAML format:
-		- Use --- at the beginning of the file
-		- Use ... at the end of the file
-	- For example, the YAML block can contain:
-			---
-			title:
-			- type: main
-			  text: Math Test Book
-			- type: subtitle
-			  text: A Possible Workflow for Creating EPUB 3 Books
-			creator:
-			- role: author
-			  text: John Smith
-			- role: editor
-			  text: Mr. Editor
-			identifier:
-			- scheme: DOI
-			  text: doi:10.234234.234/33
-			publisher:  The EPUB Factory
-			source: urn:isbn:12345678
-			rights: © 2018 TEF, CC BY-NC
-			language: en-US
-			ibooks:
-			  version: 1.3.4
-			...
-	- Place the Title.txt file in the root folder
-	- Note: if you are using a different name or format for your metadata document, make sure to adjust the script (see below) so that the pandoc command contains the correct name and file extension (the default name for your metadata file in the script is "Title.txt")
+- use YAML format:
+	- Use --- at the beginning of the file
+	- Use ... at the end of the file
+- For example, the YAML block can contain:
+---
+title:
+- type: main
+  text: Math Test Book
+- type: subtitle
+  text: A Possible Workflow for Creating EPUB 3 Books
+creator:
+- role: author
+  text: John Smith
+- role: editor
+  text: Mr. Editor
+identifier:
+- scheme: DOI
+  text: doi:10.234234.234/33
+publisher:  The EPUB Factory
+source: urn:isbn:12345678
+rights: © 2018 TEF, CC BY-NC
+language: en-US
+ibooks:
+ version: 1.3.4
+...
+
+- Place the Title.txt file in the root folder
+- Note: if you are using a different name or format for your metadata document, make sure to adjust the script (see below) so that the pandoc command contains the correct name and file extension (the default name for your metadata file in the script is "Title.txt")
 
 3. Add an image file for your EPUB (e.g., Cover.jpg) + a custom alt text in a separate file (e.g., Cover.txt)
 	- Place the cover.png file in the root folder
